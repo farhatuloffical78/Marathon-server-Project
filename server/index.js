@@ -73,8 +73,7 @@ async function run() {
             }).send({ success: true })
         })
 
-        // Create a new marathon
-        // https://notepad.pw/xRDFZbgVbxHZTfPHWgzn?email=user?email
+        
         app.post('/allMarathon',verifyToken, async (req, res) => {
             const newMarathon = req.body;
             try {

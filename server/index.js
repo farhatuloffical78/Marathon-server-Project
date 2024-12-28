@@ -49,7 +49,7 @@ const client = new MongoClient(uri, {
 
 async function run() {
     try {
-        // Connect to MongoDB
+        
         // await client.connect();
         const MarathonCollection = client.db('MarathonDB').collection('marathonData')
         const MarathonRegCollection = client.db('MarathonDB').collection('marathonRegData')

@@ -114,7 +114,7 @@ async function run() {
             }
         })
 
-        // Fetch a single marathon by ID
+       
         app.get('/allMarathon/:id',verifyToken, async (req, res) => {
             try {
                 const id = req.params.id
@@ -237,7 +237,7 @@ async function run() {
             try {
                 const { id } = req.params
 
-                // Convert ID to ObjectId using MongoDB's ObjectId
+              
                 const objectId = new ObjectId(id)
 
                 const result = await MarathonCollection.deleteOne({ _id: objectId })
